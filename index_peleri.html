@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style_peleri.css">
+	<title>Pelerinage</title>
+</head>
+<body>
+	<header id="h1">
+		<p>Informations personnelles</p>
+	</header><br>
+	<form>
+		<div id="div1">
+			<label for="CIN">CIN:</label>
+			<input type="text" name="cintxt" placeholder="entrez votre CIN"><br><br>
+			<label for="NOM">NOM:</label>
+			<input type="text" name="nomtxt" placeholder="entrez votre NOM"><br><br>
+			<label for="PRENOM">PRENOM:</label>
+	        <input type="text" name="prenomtxt" placeholder="entrez votre PRENOM"><br><br>
+	        <label for="Date">Date de dernier perelinage:</label>
+		    <input type="date" name="datetxt" ><br><br>
+		    <label for="sexe">sexe:</label>
+		<input id="rdh" type="radio" value="H" name="sexe" checked="TRUE"  onclick="display1();">
+				H
+		<input type="radio" value="F" name="sexe"  onclick="display1();">
+				F
+						</div>
+		
+		<P id="mahram">Accompagnateur(Mahram):</P>
+		<div id="div2">
+			<label for="CIN_ACC">CIN de l accompagnateur:</label>
+			<select name="cin_acc" >
+				<option>BHXXXX</option>
+			</select><br><br>
+			<label for="Lien familial">Lien familial:</label>
+			<select name="LIEN" >
+				<option>pere</option>
+				<option>mere</option>
+				<option>mari</option>
+				<option>femme</option>
+			</select><br>
+			</div>
+
+		<P>Dossier Medical:</P>
+     <div id="div3">
+		<LABEL>Groupe sanguin:</LABEL>
+		<select>
+			<option>A+</option>
+			<option>A-</option>
+			<option>B+</option>
+			<option>B-</option>
+			<option>AB+</option>
+			<option>AB-</option>
+			<option>O+</option>
+			<option>O-</option>
+			</select><br>
+		
+		<label>Maladies:</label>
+		<textarea></textarea>
+	</div>
+   </form>
+
+		<script type="text/javascript" src="js_peleri.js"></script>
+</body>
+</html>
